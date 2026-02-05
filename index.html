@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Yapay Zekam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="chat-container">
+            <header class="chat-header">
+                <div class="avatar">
+                    <div class="avatar-img">AI</div>
+                    <div class="status-dot"></div>
+                </div>
+                <div class="header-info">
+                    <h1>Sanal Asistan</h1>
+                    <span class="status-text">Çevrimiçi</span>
+                </div>
+            </header>
+
+            <div class="chat-box" id="chat-box">
+                <div class="message bot-message">
+                    Merhaba! Ben Gökmenin tasarladığın yapay zekayım. Sana nasıl yardımcı olabilirim?
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Bir mesaj yaz..." autocomplete="off">
+                <button id="send-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fuse.js (Gelişmiş Arama/Eşleşme Kütüphanesi) -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+    <script src="data.js"></script>
+    <script src="brain.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
